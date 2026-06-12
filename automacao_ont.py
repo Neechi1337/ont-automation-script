@@ -9,8 +9,8 @@ def resetar_ont():
         
         # 1. Login
         page.goto("http://192.168.1.1")
-        page.fill('input[name="Frm_Username"]', 'login')
-        page.fill('input[name="Frm_Password"]', 'senha')
+        page.fill('input[name="Frm_Username"]', 'login_provedor')
+        page.fill('input[name="Frm_Password"]', 'senha_provedor')
         page.click('input[type="submit"]')
         
         page.wait_for_load_state("networkidle")
